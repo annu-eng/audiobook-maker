@@ -2,7 +2,7 @@ import pyttsx3
 
 import PyPDF2               #Its a python library built as a PDF toolkit
 name=str(input('what is the name of your pdf ? '))    
-book=open(name+'.pdf','rb') 
+book=open(name+'.pdf','rb')    #name of the pdf is concatenated with '.pdf' extension and given as input.
                              #"rb" mode opens the pdf file in binary format for reading, 
 
 pdfReader = PyPDF2.PdfFileReader(book)  #to read from the pdf
